@@ -1,0 +1,157 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+  }
+
+  header {
+    background-color: #004080;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+
+  nav {
+    background-color: #003060;
+    padding: 10px;
+    text-align: center;
+  }
+
+  nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  .container {
+    background: white;
+    padding: 20px;
+    max-width: 800px;
+    margin: 50px auto 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  input, button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  input {
+    width: 70%;
+    max-width: 300px;
+  }
+
+  button {
+    background: #004080;
+    color: white;
+    cursor: pointer;
+    max-width: 150px;
+  }
+
+  button:hover {
+    background-color: #002c5c;
+  }
+
+  #downloadBtn {
+    background: red;
+    margin-top: 20px;
+    padding: 10px 15px;
+    border: none;
+  }
+
+  #downloadBtn:hover {
+    background: darkred;
+  }
+
+  .info p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+
+  .table-wrapper {
+    overflow-x: auto;
+    margin-top: 20px;
+  }
+
+  table {
+    width: 100%;
+    min-width: 500px;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+
+  th, td {
+    border: 1px solid #aaa;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  th {
+    background: #004080;
+    color: white;
+  }
+
+  footer {
+    margin-top: 30px;
+    background: #003060;
+    padding: 15px;
+    color: white;
+    text-align: center;
+  }
+
+  .footer {
+    margin-top: 20px;
+    text-align: right;
+    font-weight: bold;
+  }
+
+  @keyframes scrollText {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+
+  #im {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 50px;
+  }
+
+  /* Mobile responsive */
+  @media (max-width: 600px) {
+    nav a {
+      display: block;
+      margin: 10px 0;
+    }
+
+    input, button {
+      width: 90%;
+      max-width: 90%;
+    }
+
+    h2 {
+      font-size: 22px;
+    }
+
+    th, td {
+      font-size: 12px;
+      padding: 6px;
+    }
+  }

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    
+<header>
+    <img id="im" src="logo.png" alt="Logo" style="height: 80px;width: 250px; text-align: center;">
+    <h1 style="font-size: 27px; font-weight: 700;"></h1>
+    <p>&nap;&nap;&nap;</p>
+  </header>
+  
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Courses</a>
+    <a href="#">Result</a>
+    <a href="#">Contact</a>
+  </nav>
+  
+  <!-- Marquee Section -->
+  <div style="overflow: hidden; white-space: nowrap; margin-bottom: 20px;">
+    <div style="display: inline-block; animation: scrollText 10s linear infinite; color: red; font-weight: bold; font-size: 18px;">
+      <span style="color: rgb(15, 210, 224);"> 🎓 Courses Offered</span>: BCA / MCA / BBA / BSc / BA / BCom / MBA / MTech / BTech 🎓
+    </div>
+  </div>
+  
+  <!-- Highlighted Announcements -->
+  <div style="text-align:center; margin-bottom: 20px;">
+    <span style="
+    display: inline-block;
+    padding: 2px 8px;
+    background: radial-gradient(circle at center, #007BFF, #003E99);
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    border-radius: 12px;
+    box-shadow: 0 0 5px #003E99;
+    margin-right: 10px;
+    text-transform: uppercase;
+  ">
+    new
+  </span> <span style="font-weight: bold; font-size: 18px;">BCA IV SEM RESULT 2024</span>
+  <span style="
+    display: inline-block;
+    padding: 2px 8px;
+    background: radial-gradient(circle at center, #007BFF, #003E99);
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    border-radius: 12px;
+    box-shadow: 0 0 5px #003E99;
+    margin-right: 10px;
+    text-transform: uppercase;
+  ">
+    update
+  </span><br><br>
+    <span class="badge">NEW</span> <span style="font-weight: bold; font-size: 18px;">BCA V SEM RESULT 2024</span>
+    <span class="badge">PROCESSING....</span>
+  </div>
+  
+  <!-- Check Your Result Section -->
+  <h2>Check Your Result</h2>
+  
+  <div class="container">
+    <div style="text-align: center;" >
+      <input type="text" id="rollInput" placeholder="Enter Roll Number">
+      <button onclick="search()">View Result</button>
+    </div>
+  
+    <div id="resultBox" style="display: none; box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.397); padding: 20px;">
+      <h2>Semester Grade Report</h2>
+  
+      <div class="info" id="studentInfo"></div>
+  
+      <div class="table-wrapper">
+        <table id="marksTable">
+          <tr>
+            <th>Subject Code</th>
+            <th>Course Title</th>
+            <th>Credits</th>
+            <th>Grade</th>
+          </tr>
+        </table>
+      </div>
+  
+      <div class="footer">Verified by: Exam Department</div>
+      <h3 style="font-size: 10px; font-weight: 400;">CREDIT EARNED IN THE SEMESTER = <b>28.00</b></h3>
+      <h3 style="font-size: 10px; font-weight: 400;">SEMESTER GRADE POINT AVERAGE (SGPA) = <b>8.36</b></h3>
+      <h3 style="font-size: 10px; font-weight: 400;">CUMULATIVE GRADE POINT AVERAGE (CGPA) = <b>7.68</b></h3>
+      <h3 style="font-size: 10px; font-weight: 400;">EARNED CREDITS (EC) = <b>112.00</b></h3>
+      <button id="downloadBtn" onclick="downloadPDF()">Download PDF</button>
+    </div>
+  </div>
+  
+  <footer>
+    &copy; 2024 Bhagwant University. All Rights Reserved.
+  </footer>
+  
+</body>
+</html>
